@@ -1,4 +1,4 @@
-angular.module('angular-rails', [
+angular.module('hackTheElection', [
 	'ui.router',
 	'ngAnimate',
 	'templates'
