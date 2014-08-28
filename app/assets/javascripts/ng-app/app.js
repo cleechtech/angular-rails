@@ -4,7 +4,8 @@ angular.module('hackTheElection', [
 	'templates'
 ])
 
-.config(function($stateProvider, $urlRouterProvider, $locationProvider){
+.config(["$stateProvider", "$urlRouterProvider", "$locationProvider",
+function($stateProvider, $urlRouterProvider, $locationProvider){
 
 	$stateProvider
 		.state('home', {
@@ -34,4 +35,4 @@ angular.module('hackTheElection', [
 
 	$urlRouterProvider.otherwise('/');
 	$locationProvider.html5Mode(true);
-});
+}]);

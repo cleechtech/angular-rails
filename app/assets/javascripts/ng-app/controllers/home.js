@@ -1,4 +1,4 @@
 angular.module('hackTheElection')
-.controller('HomeCtrl', function($scope){
+.controller('HomeCtrl', ['$scope', function($scope){
 	$scope.things = ['one', 'two']
-})
+}])
